@@ -1,5 +1,9 @@
-const headingElement = document.getElementById('myHeading');
+const myHeading = document.getElementById('myHeading');
+const myButton = document.getElementById('myButton');
+const myTextInput = document.getElementById('myTextInput')
 
-const changeColor = () => headingElement.style.color = "blue";
 
-headingElement.addEventListener('click', changeColor);
+myButton.addEventListener('click', () => {
+  const inputValue = myTextInput.value;
+  myHeading.style.color = inputValue;
+});
